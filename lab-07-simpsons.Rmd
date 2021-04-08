@@ -65,15 +65,18 @@ ggplot(Whickham, aes(x = smoker)) + geom_bar()
 ```
 
 ```{r plot_age}
-ggplot(Whickham, aes(x = age)) + geom
+ggplot(Whickham, aes(x = age)) +
+  geom_bar()
 ```
 
 
 4. 
 
 ```{r plot_smokeVSincome_1}
-
+ggplot(data=Whickham, aes(x=smoker, y=outcome, color=outcome)) + geom_bar(stat="identity")
 ```
+Answer 4 :Smokers will die if yhey continue smoking.
+
 
 Knit, commit, and push to github.
 
